@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <style>
-    body, html {
+    body,
+    html {
       height: 100%;
       margin: 0;
       overflow: hidden;
@@ -54,6 +56,7 @@
     }
   </style>
 </head>
+
 <body>
   <div id="slider">
     <div class="slides">
@@ -116,7 +119,7 @@
     function changeSlide(n) {
       var slides = document.getElementsByClassName("slide");
       var nextSlideIndex = slideIndex + n;
-      
+
       //mudança para o ultimo slide
       //não aparece o utlimo slida
       if (nextSlideIndex === 16) {
@@ -144,10 +147,11 @@
 
       var leftArrow = document.querySelector(".arrow.left");
       leftArrow.style.display = (slideIndex === 1) ? "none" : "block";
-      
+
       var rightArrow = document.querySelector(".arrow.right");
       rightArrow.style.display = (slideIndex === slides.length) ? "none" : "block";
     }
   </script>
 </body>
+
 </html>
